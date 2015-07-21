@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Echo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="AlL-IW-Ws3">
+                                <rect key="frame" x="0.0" y="556" width="600" height="44"/>
+                                <color key="backgroundColor" red="0.050980392159999999" green="0.20784313730000001" blue="0.27058823529999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="79Y-ds-Tfo"/>
+                                </constraints>
+                                <items>
+                                    <barButtonItem title="My Music" id="HOQ-df-I9o"/>
+                                    <barButtonItem title="My Artists" id="956-4H-dgD"/>
+                                </items>
+                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="barTintColor" red="0.050980392159999999" green="0.20784313730000001" blue="0.27058823529999998" alpha="1" colorSpace="calibratedRGB"/>
+                            </toolbar>
+                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bEA-mN-3xS">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="251"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Build Music Profile" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iJt-IG-Qtt">
+                                        <rect key="frame" x="189" y="212" width="222" height="46"/>
+                                        <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="17"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                        <color key="shadowColor" red="0.31764705879999999" green="0.31764705879999999" blue="0.31764705879999999" alpha="1" colorSpace="calibratedRGB"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Robert F. Dickerson" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bim-WG-IB0">
+                                        <rect key="frame" x="194" y="43" width="212" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yfz-MA-PJE">
+                                        <rect key="frame" x="473" y="213" width="97" height="30"/>
+                                        <state key="normal" title="Edit">
+                                            <color key="titleColor" red="0.21959663927555084" green="0.80839169025421143" blue="0.59384196996688843" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="handleSwitchView:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UrU-0G-20v"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.031372549019607843" green="0.16470588235294117" blue="0.20784313725490197" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="centerX" secondItem="iJt-IG-Qtt" secondAttribute="centerX" id="877-qo-M7a"/>
+                                    <constraint firstAttribute="trailing" secondItem="yfz-MA-PJE" secondAttribute="trailing" constant="10" id="Ond-CE-Jfo"/>
+                                </constraints>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="ProfilePic" translatesAutoresizingMaskIntoConstraints="NO" id="GIY-X6-rp9">
+                                <rect key="frame" x="252" y="250" width="97" height="99"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="7Lu-1s-20z"/>
+                                    <constraint firstAttribute="height" constant="120" id="Qnn-mG-kku"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.050980392156862744" green="0.20784313725490197" blue="0.27058823529411763" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="bEA-mN-3xS" secondAttribute="trailing" id="1tI-GC-3qd"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="AlL-IW-Ws3" secondAttribute="bottom" id="32f-Qh-RJM"/>
+                            <constraint firstAttribute="trailing" secondItem="bEA-mN-3xS" secondAttribute="trailing" id="3ec-bf-uMH"/>
+                            <constraint firstAttribute="centerX" secondItem="GIY-X6-rp9" secondAttribute="centerX" id="Qg2-p2-zG6"/>
+                            <constraint firstItem="bEA-mN-3xS" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="iEg-mU-PoP"/>
+                            <constraint firstItem="bEA-mN-3xS" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="sTu-Po-WzQ"/>
+                            <constraint firstItem="bEA-mN-3xS" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="zJZ-6L-IQG"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="editDoneButton" destination="yfz-MA-PJE" id="Zeo-nh-k98"/>
+                        <outlet property="lowerToolbar" destination="AlL-IW-Ws3" id="GhJ-0f-Xyv"/>
+                        <outlet property="profilePicView" destination="GIY-X6-rp9" id="PLU-c5-QkC"/>
+                        <outlet property="toolbarLabel" destination="iJt-IG-Qtt" id="Toz-WT-uRh"/>
+                        <outlet property="topBar" destination="bEA-mN-3xS" id="eED-A5-S9f"/>
+                        <outlet property="usernameLabel" destination="Bim-WG-IB0" id="WkP-4L-nbJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="470" y="407"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ProfilePic" width="130" height="130"/>
+    </resources>
+</document>
