@@ -1,8 +1,8 @@
 //
 //  AppDelegate.swift
-//  Echo
+//  TestSceneKit
 //
-//  Created by Robert Dickerson on 7/10/15.
+//  Created by Robert Dickerson on 7/11/15.
 //  Copyright (c) 2015 Robert Dickerson. All rights reserved.
 //
 
